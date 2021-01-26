@@ -13,3 +13,6 @@ git checkout main
 git add 20210125Class.py
 git commit
 git push
+
+5. 其他命令
+git log :查看日志
