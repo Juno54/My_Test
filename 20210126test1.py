@@ -23,3 +23,5 @@ for i in range(101):
     sum=sum+i
     i+=1
 print(sum)
+
+
