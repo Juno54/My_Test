@@ -1,4 +1,4 @@
-###猜数游戏，用while循环
+"""###猜数游戏，用while循环
 
 import random
 
@@ -13,3 +13,13 @@ while True:
     elif person_number == computer_number:
         print('猜对啦')
         break
+
+"""
+
+##计算1加到100
+i=0
+sum=0
+for i in range(101):
+    sum=sum+i
+    i+=1
+print(sum)
