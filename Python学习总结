@@ -11,7 +11,7 @@ teardown_  在测试用例执行后执行
 
 三。参数化与数据驱动
 1.pytest参数化
-装饰器： @pytest.mark.parametrize(   ids=['','',可以给每组测试用例命名])
+装饰器： @pytest.mark.parametrize(  ,  , ids=['','',可以给每组测试用例命名])
 
 2.pytest数据驱动；yaml json excel csv 格式存储参数
 推荐用yaml
@@ -19,3 +19,5 @@ safe_load :将yaml格式的数据流转换为python格式
 
 四。
 data:list=fundtion()   直接将data定义为list
+
+五  小数， 除法有零
