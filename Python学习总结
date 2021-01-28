@@ -3,3 +3,19 @@ list 列表：   a[] ,元素内容可变，可做增，删，改，查
 tuple 元祖:   a(), 元素内容不可变，但是元祖中的元素可以是list, 可以修改list的内容。
 set 集合:     a{}, 元素内容可变？ 可做交集，并集
 dic  字典:    a{key:value},可变。
+
+二。 在类外面的叫函数，在类里面的叫方法
+setup_ 在测试用例执行前执行， 类似只初始化一次参数，就可以使用setup
+teardown_  在测试用例执行后执行
+方法是封闭的，方法1的参数不能在其他方法里调用。如果需要可以使用 self. 来调用
+
+三。参数化与数据驱动
+1.pytest参数化
+装饰器： @pytest.mark.parametrize(   ids=['','',可以给每组测试用例命名])
+
+2.pytest数据驱动；yaml json excel csv 格式存储参数
+推荐用yaml
+safe_load :将yaml格式的数据流转换为python格式
+
+四。
+data:list=fundtion()   直接将data定义为list
