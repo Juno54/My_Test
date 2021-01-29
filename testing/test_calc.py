@@ -36,12 +36,12 @@ class Test_caculator:
         print('测试结束...')
 
 
-    #加法和除法分别使用了2种格式数据进行测试
+    #加法和除法分别使用了3种格式数据进行测试，一种直接输出结果，一种保留小数点后6位，一种使用decimal格式
     #注意，c,a,b要用1个引号括起来，代表1个参数
     @pytest.mark.parametrize('c,a,b',data1[0],ids=data1[1])
     def test_add1(self,c,a,b):
         print(f'c=a+b: c={c}  a={a}  b={b}')
-        assert  ('%f' %c) == self.calc.add1(a,b)
+        assert c == self.calc.add1(a,b)
 
     @pytest.mark.parametrize('c,a,b',data1[0],ids=data1[1])
     def test_add2(self, c, a, b):
