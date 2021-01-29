@@ -8,6 +8,7 @@ from pythoncode.Caculator import Calculator
 from decimal import Decimal
 import yaml
 
+##读取calc.yaml文件中的数据
 def get_data1():
     with open('./datas/calc.yaml',encoding='utf-8') as f:
         data1 = yaml.safe_load(f)
@@ -15,8 +16,8 @@ def get_data1():
 
 def get_data2():
     with open('./datas/calc.yaml',encoding='utf-8') as f:
-        data3 = yaml.safe_load(f)
-    return (data3['division']['datas'],data3['division']['ids'])
+        data2 = yaml.safe_load(f)
+    return (data2['division']['datas'],data2['division']['ids'])
 
 
 
