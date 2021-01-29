@@ -24,7 +24,7 @@ def login():
 
 class TestDemo:
     def test_a(self,login):
-        ##前面加个f是什么意思？？？？
+        ##前面加个f, 就是格式化输出
         print(f"a   username={login}")
 
     def test_b(self):
