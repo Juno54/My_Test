@@ -11,7 +11,7 @@ import yaml
 def get_datas():
     with open('./datas/calc.yaml') as f:
         datas = yaml.safe_load(f)
-    return datas[]
+    return datas(['add1'][datas],datas['add1']['ids'])
 
 
 class Test_caculator:

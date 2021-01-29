@@ -6,6 +6,8 @@ add1:
     - [0,9,-9]
     - [1024,1000,24]
     - [0.3,0.1,0.2]
+  ids: ['int','minus','zero','bignum','decimal']
+
 
 add2:
   datas:
