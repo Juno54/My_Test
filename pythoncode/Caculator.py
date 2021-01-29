@@ -7,6 +7,9 @@ class Calculator:
     def add2(self,a,b):
         return (Decimal(a+b).quantize(Decimal('1.000000')))
 
-    def division(self,a,b):
+    def division1(self,a,b):
+        return ('%f' %(a/b))
+
+    def division2(self,a,b):
         return (Decimal(a/b).quantize(Decimal('1.000000')))
 
