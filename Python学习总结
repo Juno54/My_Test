@@ -21,3 +21,4 @@ safe_load :将yaml格式的数据流转换为python格式
 data:list=fundtion()   直接将data定义为list
 
 五  小数， 除法有零
+demacil精准十进制计算。https://docs.python.org/zh-cn/3/library/decimal.html
