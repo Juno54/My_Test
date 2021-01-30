@@ -9,7 +9,8 @@ add:
     - [-6.4449, -2.3333, -4.1116]
     - [10.012, 2.005, 8.007]
     - [0.3, 0.1, 0.2]
-  ids: ['int','zero','bignum','minus1','minus2','decimal1','decimal2','decimal3']
+    - [~,3,'x']
+  ids: ['int','zero','bignum','minus1','minus2','decimal1','decimal2','decimal3','error']
 
 
 division:
@@ -20,5 +21,7 @@ division:
     - [10, -20, -2]
     - [0.6, 3.6, 6]
     - [2.666667, 8, 3]
-    - [4,20,0]
-  ids: ['int','bignum','minus1','minus2','decimal1','decimal2','Zero']
+    - [~,3,'x']
+    - [~,'3',-5]
+    - [~,100,0]
+  ids: ['int','bignum','minus1','minus2','decimal1','decimal2','error1','error2','error3']

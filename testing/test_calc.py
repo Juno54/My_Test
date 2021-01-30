@@ -46,26 +46,28 @@ class Test_caculator:
     @pytest.mark.parametrize('c,a,b',data1[0],ids=data1[1])
     def test_add2(self, c, a, b):
         print(f'c=a+b: c={c}  a={a}  b={b}')
-        assert (Decimal(c).quantize(Decimal('1.000000'))) == self.calc.add2(a, b)
+        if self.calc.add2(a,b) is None:
+            assert c == self.calc.add2(a,b)
+        else:
+            assert (Decimal(c).quantize(Decimal('1.000000'))) == self.calc.add2(a, b)
 
     @pytest.mark.parametrize('c,a,b',data2[0],ids=data2[1])
     def test_division1(self,c,a,b):
-        try:
-            print(f'c=a/b: c={c}  a={a}  b={b}')
-            assert ('%f' %c) == self.calc.division1(a,b)
-        except ZeroDivisionError:
-            print('分子不能为0')
+        if self.calc.division1(a,b) is None:
+            assert c == self.calc.division1(a,b)
+        else:
+            assert ('%f' % c) == self.calc.division1(a, b)
+
 
 
     # 注意，c,a,b要用1个引号括起来，代表1个参数
     @pytest.mark.parametrize('c,a,b',data2[0],ids=data2[1])
     def test_division2(self, c, a, b):
-        try:
-            print(f"c=a/b: c={c}  a={a}  b={b}")
+        print(f"c=a/b: c={c}  a={a}  b={b}")
+        if self.calc.division2(a,b) is None:
+            assert  c == self.calc.division2(a,b)
+        else:
             assert (Decimal(c).quantize(Decimal('1.000000'))) == self.calc.division2(a, b)
-        except ZeroDivisionError:
-            print('分子不能为0')
-
 
 
 

@@ -19,6 +19,11 @@
 # print(a[0])
 # print(a[1])
 
-a=0.1
-b=0.2
-print('%f' %(a+b))
+#
+# a=input('请输入a:')
+# b=input('请输入b')
+# print('%f' %(a+b))
+#
+# try:
+#     fdf
+# except TypeError
