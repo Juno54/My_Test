@@ -1,6 +1,6 @@
 #被测类：计算器
 from decimal import Decimal
-class Calculator:
+class Calculator01:
     def add1(self,a,b):
         return ('%f' %(a+b))
 

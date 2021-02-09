@@ -4,7 +4,7 @@
 
 import sys
 import pytest
-from pythoncode.Caculator import Calculator
+from pythoncode.Caculator import Calculator01
 from decimal import Decimal
 import yaml
 
@@ -20,7 +20,7 @@ class Test_caculator:
     def setup_class(self):
         print('开始测试...')
         #初始化1个实例calc
-        self.calc = Calculator()
+        self.calc = Calculator01()
 
     def teardown_class(self):
         print('测试结束...')
