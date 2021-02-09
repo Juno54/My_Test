@@ -1,6 +1,6 @@
 1.配置提交用户的名称
 git config --global user.name “Juno54”
-git config --global user.email "xuzhouzhou54@163.com”
+git config --global user.email "xxxxxx@163.com”
 
 2. 进入具体目录后，将github上的项目取下来
 git remote add origin https://github.com/Juno54/My_Test.git
